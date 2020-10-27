@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			
+		</style>
+		<script>
+			alert('Welcome to Itlize Global!');
+		</script>
+	</head>
+	<body>
+		<h1 id="welcome"></h1>
+		<h3 id="soccer"></h3>
+		<script type="text/javascript">
+			var txt;
+			var person = prompt("Please enter your name:", "");
+			if (person == null || person == "") {
+			  txt = "User cancelled the prompt.";
+			} else {
+			  txt = "Hello " + person + ", Welcome to Itlize Global!";
+			}
+			document.getElementById("welcome").innerHTML = txt;
+
+			if (confirm("Do you like playing Soccer?")) {
+			    txt = person + " likes playing Soccer.";
+			  } else {
+			    txt = person + " don't likes playing Soccer.";
+			  }
+			document.getElementById("soccer").innerHTML = txt;
+
+		</script>
+	</body>
+</html>
